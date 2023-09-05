@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Exemplo</title>
+  </head>
+  <body>
+    <script>
+      const exibe = () => {
+        let tableHTML = '<table border="1"><tr>';
+        
+        for (let i = 0; i < 10; i++) {
+          tableHTML += '<td>*</td>';
+        }
+        
+        tableHTML += '</tr></table>';
+        
+        document.body.innerHTML = tableHTML;
+      }
+
+      const fase = 1;
+      let selecionado1 = 0;
+      let selecionado2 = 0;
+      const memoria1 = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5];
+      const memoria2 = ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'];
+
+      exibe();
+    </script>
+  </body>
+</html>
